@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -76,11 +77,11 @@ WSGI_APPLICATION = 'swachhtech.wsgi.application'
 DATABASES = {
     'default':  {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "bdxx5zb4u2qcxqfbfj0v",
-        "USER": "ucczjuhbzfmbiybv",
-        "PASSWORD": "MiaWmS5hCFeBP9uf9oDA",
-        "HOST": "bdxx5zb4u2qcxqfbfj0v-mysql.services.clever-cloud.com",
-        "PORT": "3306",
+        "NAME": config("bdxx5zb4u2qcxqfbfj0v"),
+        "USER": config("ucczjuhbzfmbiybv"),
+        "PASSWORD": config("MiaWmS5hCFeBP9uf9oDA"),
+        "HOST": config("bdxx5zb4u2qcxqfbfj0v-mysql.services.clever-cloud.com"),
+        "PORT": config("3306"),
     }
 }
 
