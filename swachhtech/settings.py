@@ -74,9 +74,13 @@ WSGI_APPLICATION = 'swachhtech.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    'default':  {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "bdxx5zb4u2qcxqfbfj0v",
+        "USER": "ucczjuhbzfmbiybv",
+        "PASSWORD": "MiaWmS5hCFeBP9uf9oDA",
+        "HOST": "bdxx5zb4u2qcxqfbfj0v-mysql.services.clever-cloud.com",
+        "PORT": "3306",
     }
 }
 
