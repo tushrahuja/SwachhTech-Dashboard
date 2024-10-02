@@ -77,11 +77,6 @@ WSGI_APPLICATION = 'swachhtech.wsgi.application'
 DATABASES = {
     'default':  {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": config("bdxx5zb4u2qcxqfbfj0v"),
-        "USER": config("ucczjuhbzfmbiybv"),
-        "PASSWORD": config("MiaWmS5hCFeBP9uf9oDA"),
-        "HOST": config("bdxx5zb4u2qcxqfbfj0v-mysql.services.clever-cloud.com"),
-        "PORT": config("3306"),
     }
 }
 
